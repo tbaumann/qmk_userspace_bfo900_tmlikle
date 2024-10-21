@@ -2,6 +2,10 @@ name: Build QMK firmware
 
 on: [push, workflow_dispatch]
 
+# Original BFO builds for Atmega, I have RP_4020
+env:
+    CONVERT_TO: helios
+
 permissions:
   contents: write
 
